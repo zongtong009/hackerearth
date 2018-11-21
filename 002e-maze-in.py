@@ -1,14 +1,15 @@
 a=0
 b=0
 
-temp=input()
-for i in temp:
-    if i =='L':
-        a-=1
-    elif i =='R':
-        a+=1
-    elif i =='U':
-        b+=1
-    else:
-        b-=1
-print(a,b)
+def get_sum(string):
+    s=string
+    lt=[]
+    for i in s[::-1]:
+        if i in 'aeouiAEOUI':
+            lt.append(1)
+        else:
+            lt.append(0)
+    return lt
+def sun(list):
+    lt=list
+    
